@@ -86,7 +86,6 @@ namespace Morsekod
             }
 
            
-
             return string.Join("", charList);
         }
     }
