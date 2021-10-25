@@ -59,7 +59,7 @@ namespace Morsekod
             textList.Add("--**--", ',');
             textList.Add("*-*-*-", '.');
             textList.Add("*--*-*", '@');
-            textList.Add(" ", ' ');
+            textList.Add("", ' ');
         }
 
         public static string GetMorseInput()
@@ -79,13 +79,31 @@ namespace Morsekod
             
             string[] subString = input.Split(" ");
             List<char> charList = new List<char>();
+            
 
             for (int i = 0; i < subString.Length; i++)
             {
+                if (subString[i] == "" && subString[i - 1] == "")
+                {
+                    continue;
+                }
+
                 charList.Add(textList[subString[i]]);
             }
 
-           
+            for (int i = 1; i < subString.Length; i++)
+            {
+                try
+                {
+                    charList[i] = Char.ToLower(charList[i]);
+                }
+
+                catch
+                {
+                    continue;
+                }
+            }
+
             return string.Join("", charList);
         }
     }

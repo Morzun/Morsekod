@@ -85,7 +85,7 @@ namespace Morsekod
                 }
                 else if (character == ' ')
                 {
-                    stringBuilder.Append("   ");
+                    stringBuilder.Append("  ");
                 }
                 else
                 {
