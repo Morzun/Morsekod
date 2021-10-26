@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morsekod
 {
-    class Class2
+    class MorseClass
     {
         static Dictionary<string, char> textList = new Dictionary<string, char>();
 
@@ -64,13 +64,7 @@ namespace Morsekod
 
         public static string GetMorseInput()
         {
-            string input = Console.ReadLine();
-
-            //if (!string.IsNullOrEmpty(input))
-            //{
-            //    input = input;
-            //}
-
+            string input = Console.ReadLine();          
             return input;
         }
 

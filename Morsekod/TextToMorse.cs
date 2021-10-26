@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Morsekod
 {
-    class Class1
+    class TextClass
     {
         static Dictionary<char, string> morseList = new Dictionary<char, string>();
         public static void InitializeMorseDictionary()
@@ -98,3 +98,4 @@ namespace Morsekod
 
     }
 }
+

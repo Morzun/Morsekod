@@ -12,8 +12,8 @@ namespace Morsekod
         static void Main(string[] args)
         {
             
-            Class1.InitializeMorseDictionary();
-            Class2.InitializeTextDictionary();
+            TextClass.InitializeMorseDictionary();
+            MorseClass.InitializeTextDictionary();
 
             RunProgram.StartProgram();
 
