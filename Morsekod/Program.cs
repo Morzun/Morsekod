@@ -21,14 +21,6 @@ namespace Morsekod
 
 
 
-
-
-
-
-
-
-
-
     }
 }
 
